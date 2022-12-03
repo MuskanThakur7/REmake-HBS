@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body{
+       margin: 0;
+       padding: 0;
+       height: 100vh;
+    }
+    .header{
+        width: 100%;
+        height: 80px;
+        background:linear-gradient(to right top,#baa9be,#958aa4,#7f758e,#62586e) ;
+    }
+    .grp_item1{
+      margin-right: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      padding: 7px;
+      border: none;
+      outline: none;
+
+    }
+    .grp_item{
+      margin-left: 500px;
+      margin-top: 20px;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      border: none;
+    border-bottom: 1px solid rgb(222, 209, 209);
+    background: transparent;
+      font-size: 30px;
+      padding-left: 300px;
+      /* font-family: sans-serif; */
+
+    }
+
+    .grp_list{
+        display: flex;
+      justify-content:space-between;
+    }
+    .temp_page{
+      position: absolute;
+      margin-top: 30px;
+      width: 50%;
+      display: flex;
+      
+
+    }
+    #img{
+      width: 250px;
+      height: 200px;
+      border: 1px solid rgb(46, 43, 43);
+      background-color: rgb(233, 229, 234);
+      margin: 10px 0px 10px 30px;
+      border-radius: 10px;
+      padding: 80px 0px 0px px;
+      box-shadow: 2px 3px 8px rgb(50, 47, 47);
+      position: relative;
+
+    }
+    .temp_page h1{
+      margin-left: 40px;
+    
+    }
+    .field_items{
+      float: right;
+      padding: 10px;
+      max-width: 200px;
+      /* display: float; */
+    }
+    .input_list{
+      height: 100%;
+      width: 100%;
+    }
+    /* .input_list{
+      display: grid;
+      grid-template-columns:100px 100px;
+      max-width: 200px;
+      
+    } */
+</style>
+<body>
+    
+    <div class="header">
+        <form class="temp_grp">
+            <div class="grp_list">
+            <input class="grp_item" type="text" value="Title">
+            <button class="grp_item1" ><i class="fa fa-download" ></i> Download</button>
+
+        </div>
+        <div class="temp_page">
+          <form class="pg_form">
+            <h1>Personal details</h1>
+            <div id="img">
+              <i class="fa fa-camera" style="font-size: 36px; text-shadow: 2px 2px 4px #736c6c;padding-left: 100px;padding-top: 90px;"></i>
+              <input type="file" placeholder="Photo" style="padding-top: 10px;padding-left: 35px; cursor: pointer;">
+            </div>
+              <div class="input_list">
+
+              <div class="field_items">
+              <label>
+              First name
+             </label> <input type="text">
+            </div>
+
+            <div class="field_items">
+             <label>
+              Middle name
+             </label> <input type="text">
+            </div>
+             
+            <div class="field_items">
+             <label>
+              Last name
+             </label> <input type="text">
+            </div>
+            <div class="field_items">
+             <label>
+              Email Id
+             </label> <input type="email">
+            </div>
+            <div class="field_items">
+             <label>
+              Phone number
+             </label> <input type="number">
+            </div>
+            <div class="field_items">
+             <label>
+              Address
+             </label> <input type="text">
+            </div>
+            <div class="field_items">
+             <label>
+              Pincode
+             </label> <input type="number">
+            </div>
+            <div class="field_items">
+             <label>
+              City
+             </label> <input type="text">
+            </div>
+             </div>
+             
+        
+            </div>
+          </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+       height: 100vh;
+       width: 100vw;
+    }
+    .header{
+        width: 100%;
+        height: 80px;
+        background:linear-gradient(to right top,#baa9be,#958aa4,#7f758e,#62586e) ;
+    }
+    .grp_item1 {
+    float: right;
+    margin-right: 80px;
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 13px;
+    border: none;
+    outline: none;
+}
+    .grp_item{
+      margin-left: 681px;
+      margin-top: 20px;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      border: none;
+    border-bottom: 1px solid rgb(222, 209, 209);
+    background: transparent;
+      font-size: 30px;
+      padding-left: 300px;
+      outline: none;
+      /* font-family: sans-serif; */
+
+    }
+    .container{
+        width:60vw;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+    }
+
+    #img{
+      width: 250px;
+      height: 200px;
+      border: 1px solid rgb(46, 43, 43);
+      background-color: rgb(233, 229, 234);
+      margin: 5px 0px 10px 30px;
+      border-radius: 10px;
+      padding: 30px 0px 0px px;
+      box-shadow: 2px 3px 8px rgb(50, 47, 47);
+      position: absolute;
+    }
+
+.container h1{
+      /* margin-left: 40px; */
+      margin: 20px 0px 20px 40px;
+    
+    }
+    .field_items{
+      float: left;
+      padding: 10px;
+      max-width: 200px;
+      /* display: float; */
+      position: absolute;
+    }
+    .field_items input{
+         height: 25px;
+         border-radius: 4px;
+         border: 1px solid rgb(147, 146, 147);
+         /* background: linear-gradient(to top,#baa9be,#aa9fba,#827a8f); */
+
+    }
+    #f1{
+        left: 35%;
+        top: 10%;
+    }
+    #f1 input,#l1 input{
+        width: 200px;
+    }
+
+    #l1{
+        left: 60%;
+        top: 10%;
+     }
+    #e1{
+        left: 35%;
+        top: 22%;
+    }
+    #e1 input{
+        width: 431px;
+    }
+    #g1{
+        left: 35%;
+        top: 34%;
+    }
+    #ph1{
+        left: 2.5%;
+        top: 45%;
+    }
+    #ph1 input{
+      width: 248px;
+    }
+    #add1{
+        left: 35%;
+        top: 45%;
+    }
+
+    #add1 input{
+        width: 435px;
+    }
+    #pin1{
+        left: 2.5%;
+        top: 55%;
+    }
+    #pin1 input{
+        width: 248px;
+    }
+    #c1{
+        left: 35%;
+        top: 55%;
+    }
+    #c1 input{
+        width: 435px;
+    }
+    .tempBox{
+        width: 500px;
+        height: 560px;
+        background-color: rgb(233, 229, 234);
+        float: right;
+        margin-right: 70px;
+        margin-top: 50px;
+    }
+    .navH{
+        width: 500px;
+        height: 50px;
+        background-color:#000000;
+    }
+    .tempBox input{
+        display: block;
+        margin-bottom: 40px;
+        padding: 4px;
+        font-size: larger;
+        border-left: 0;
+     border-top: 0;
+    border-right: 0; 
+    border-bottom: 1px solid #999;
+     outline: none; 
+    background: transparent; 
+    }
+    .inside_items{
+    margin: 10px 0px 0px 20px;
+    }
+    .file_field{
+        display: grid;
+        margin: 50% 5px 30px 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .ff{
+        width: 200px;
+        height: 36px;
+        background-color: #927e96;
+        /* padding: 5px; */
+        text-align: center;
+        justify-items: center;
+        margin: 15px;
+        border-radius: 5px;
+        color: aliceblue;
+        border: none;
+        cursor: pointer;
+    }
+    .file_field2{
+        display: grid;
+        margin: 10% 5px 30px 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .ff2{
+        width: 200px;
+        height: 36px;
+        background-color: #927e96;
+        /* padding: 5px; */
+        text-align: center;
+        justify-items: center;
+        margin: 15px;
+        border-radius: 5px;
+        color: aliceblue;
+        border: none;
+        cursor: pointer;
+    }
+    .of{
+        width: 200px;
+        height: 36px;
+        text-align: center;
+        justify-items: center;
+        margin: 50px 0px 5px 5%;
+        display: block;
+        border-radius: 5px;
+        color: rgb(0, 0, 0);
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 1px solid #000000; 
+        outline: none;
+    }
+    .dnld{
+        
+        left: 600px;
+    }
+    .back_btn{
+    position: absolute;
+    color: aliceblue;
+    z-index: 5;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+.back_btn img{
+    width: 20px;
+    height: 20px;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        {{!-- <a href="HomePage.html" class="back_btn"> <img src="https://cdn-icons-png.flaticon.com/512/545/545680.png" alt=""> </a> --}}
+        <form class="temp_grp">
+            <div class="grp_list">
+            <input class="grp_item" type="text" value="Title">
+            <button class="grp_item1" ><i class="fa fa-download" ></i> Download</button>
+            </div>
+        
+    </div>
+
+        <div class="container">
+
+                <h1>Personal details</h1>
+            <div id="img">
+              <i class="fa fa-camera" style="font-size: 36px; text-shadow: 2px 2px 4px #736c6c;padding-left: 105px;padding-top: 60px;"></i>
+              <input type="file" placeholder="Photo" style="padding-top: 10px;padding-left: 40px; cursor: pointer;">
+            </div>
+
+        
+                      <div class="field_items" id="f1">
+                      <label>
+                      First name
+                     </label> <input type="text">
+                    </div>
+        
+                    
+                    <div class="field_items" id="l1">
+                        <label>
+                            Last name
+                        </label> <input type="text">
+                    </div>
+
+                    <div class="field_items" id="g1">
+                     
+                        <legend>Gender</legend>
+          Male <input type="radio" name="Gender" id="Male">&nbsp; 
+          Female <input type="radio" name="Gender" id="Female">
+        
+                       
+                    </div>
+
+                    <div class="field_items" id="e1">
+                     <label>
+                      Email Id
+                     </label> <input type="email">
+                    </div>
+                    <div class="field_items" id="ph1">
+                     <label>
+                      Phone number
+                     </label> <input type="number">
+                    </div>
+                    <div class="field_items" id="add1">
+                     <label>
+                      Address
+                     </label> <input type="text">
+                    </div>
+                    <div class="field_items" id="pin1">
+                     <label>
+                      Pincode
+                     </label> <input type="number">
+                    </div>
+                    <div class="field_items" id="c1">
+                     <label>
+                      City
+                     </label> <input type="text">
+                    </div>
+
+                    <div class="file_field">
+                     <button class="ff"><i class="fa fa-download" style="padding: 8px 10px;"></i> Date of birth</button>
+                        <button class="ff"><i class="fa fa-download" style="padding:8px 10px ;"></i>Linkedin</button>
+                        <button class="ff"><i class="fa fa-download" style="padding:8px 10px ;"></i>Driver's license</button>
+                        <button class="ff"><i class="fa fa-download" style="padding:8px 10px ;"></i>Natinality</button>
+                        <button class="ff"><i class="fa fa-download" style="padding:8px 10px;"></i>Civil status</button>
+                        <button class="ff"><i class="fa fa-download" style="padding:8px 10px ;"></i>Website</button>
+                    </div>
+                    <div class="other_files">
+                         <input class="of" type="text" placeholder="Education">
+                         <input class="of" type="text" placeholder="Employment">
+                         <input class="of" type="text" placeholder="Skills">
+                         <input class="of" type="text" placeholder="Languages">
+                         <input class="of" type="text" placeholder="Hobbies">
+                    </div>
+                    <div class="file_field2">
+                        <button class="ff2"><i class="fa fa-plus" style="padding: 8px 10px;"></i>Profile</button>
+                           <button class="ff2"><i class="fa fa-plus" style="padding:8px 10px ;"></i>Courses</button>
+                           <button class="ff2"><i class="fa fa-plus" style="padding:8px 10px ;"></i>Internships</button>
+                           <button class="ff2"><i class="fa fa-plus" style="padding:8px 10px ;"></i>Certificates</button>
+                           <button class="ff2"><i class="fa fa-plus" style="padding:8px 10px;"></i>Achievements</button>
+                           <button class="ff2"><i class="fa fa-plus" style="padding:8px 10px ;"></i>Qualities</button>
+                       </div>
+
+                      <div class="dnld"> <button style="margin-left: 1000px; padding:7px 10px; border-radius:10px "><i class="fa fa-download" style="padding: 8px 15px;"></i>Download</button></div>
+                </div>
+    
+            </form>
+
+            <div class="tempBox">
+                <div class="navH"></div>
+                <div class="inside_items">
+                 <h5>Education</h5><input type="text">
+                 <h5>Employment</h5><input type="text">
+                 <h5>Extracurricular activities</h5><input type="text">
+                </div>
+            
+             </div>
+
+
+                     
+
+</body>
+</html>
